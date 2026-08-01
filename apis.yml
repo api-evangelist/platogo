@@ -1,7 +1,26 @@
 aid: platogo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/platogo.png
 name: Platogo
-description: Platogo is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Platogo Interactive Entertainment GmbH is a Vienna, Austria based social
+  casino gaming studio that builds and operates free-to-play slot and casino apps
+  for mobile and web. Its flagship titles are Slotpark, a premium Vegas-style social
+  slots app used by millions daily, and Gaminator, one of the largest social casino
+  gaming communities on the web. The company localizes its games into more than 13
+  languages and works alongside industry partners including Greentube and Novomatic.
+  Platogo is backed by Seedcamp. No public developer API, SDK, or technical documentation
+  is currently published; this profile captures the company identity and domain-security
+  posture only.
 url: https://raw.githubusercontent.com/api-evangelist/platogo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Gaming
+- Social Casino
+- Mobile Games
+- Casino Games
+- Entertainment
+- Free-to-Play
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/platogo-domain-security.yml
 - type: Website
-  url: http://platogo.com
+  url: https://platogo.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
